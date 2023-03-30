@@ -62,7 +62,6 @@ public class Login extends JDialog {
     private void onLogin(){
         //登录
         try {
-
             if (client.login(Integer.parseInt(cardId.getText()), String.valueOf(cardPassword.getPassword())))
             {
                 loginResult.setText("用户登陆成功");

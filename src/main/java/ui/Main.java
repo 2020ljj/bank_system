@@ -98,7 +98,6 @@ public class Main extends JDialog {
      * 点击即打开查询余额页面
      */
     private void onInquiry() {
-
         try {
             List<Record> CardRecord = client.getTransferRecords(id);
             Card card = client.getDetailedInfo(id);
@@ -135,8 +134,6 @@ public class Main extends JDialog {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
     /**
      *响应“取款”按钮
@@ -203,7 +200,6 @@ public class Main extends JDialog {
         try {
             double recentDeposit = client.getDetailedInfo(id).getMoney();
             String Opassword = client.getDetailedInfo(id).getPassword();
-
             ShowAccount dialog = new ShowAccount(Opassword,recentDeposit);//传递密码作为参数
             SetPosition.setFrameCenter(dialog);
             dialog.pack();
@@ -225,13 +221,9 @@ public class Main extends JDialog {
                     else
                         JOptionPane.showMessageDialog(null, "修改密码失败！");
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
-
     }
 }
 

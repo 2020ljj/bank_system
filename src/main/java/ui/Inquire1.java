@@ -60,7 +60,6 @@ public class Inquire1 extends JDialog {
         dialog.pack();
         dialog.setVisible(true);
         dialog.setAlwaysOnTop(true);
-
     }
 
     private void onInquiryRecord() {
@@ -70,7 +69,6 @@ public class Inquire1 extends JDialog {
         frame.setVisible(true);
         frame.setAlwaysOnTop(true);
         //frame.dispose();
-
     }
     private void onCancel(){
         dispose();
